@@ -135,8 +135,7 @@
     top: 0;
     left: 0;
     transform: scaleY(0);
-    transition: transform 0.2s, width 0.4s cubic-bezier(0.91, 0.01, 0, 1) 0.2s,
-      background-color 0.1s;
+    transition: transform 0.2s, width 0.4s cubic-bezier(0.91, 0.01, 0, 1) 0.2s, background-color 0.1s;
   }
 
   &__item:active::before {
@@ -169,6 +168,7 @@
     fill: currentColor;
   }
 }
+
 ///////////////////////////////
 ////LEGAL TEXT
 .legal {
@@ -176,4 +176,48 @@
   padding: 2.5rem;
   color: var(--color-grey-light-4);
   text-align: center;
+}
+
+///////////////////////////////
+////PHOTO OF HOTELS
+
+.gallery {
+  display: flex;
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+///////////////////////////////
+////HOTEL OVERVIEW
+
+.overview {
+  display: flex;
+  &__heading {
+  }
+
+  &__stars {
+    // flex: 1;
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+  }
+
+  &__rating {
+  }
+
+  &__rating-avarege {
+  }
+
+  &__rating-counts {
+  }
 }
